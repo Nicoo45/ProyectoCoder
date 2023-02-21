@@ -4,16 +4,16 @@ from AppCoder.models import Curso
 
 # Create your views here.
 def inicio(request):
-    return HttpResponse("Vista inicio")
+    return render(request, 'AppCoder/inicio.html')
 
-def curso(request):
-    return HttpResponse("Vista cursos")
+def cursos(request):
+    return render(request, 'AppCoder/cursos.html')
 
 def profesores(request):
-    return HttpResponse("Vista profesores")
+    return render(request, 'AppCoder/profesores.html')    
 
 def entregables(request):
-    return HttpResponse("Vista entregables")
+    return render(request, 'AppCoder/entregables.html')
 
 def estudiantes(request):
-    return HttpResponse("Vista estudiante")
+    return render(request, 'AppCoder/estudiantes.html')

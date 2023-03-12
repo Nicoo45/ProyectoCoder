@@ -28,4 +28,7 @@ urlpatterns = [
     #path('resultadoBusqueda/', views.buscar, name="Buscar"),
     path('busquedaCursos/', views.busquedaCursos),
     path('buscar/', views.buscar),
+    path('leerProfesores', views.leerProfesores, name="LeerProfesores"),
+    path('eliminarProfesores/<profesor_nombre>/', views.eliminarProfesores, name="EliminarProfesor"),
+    path('editarProfesor/<profesor_nombre>/', views.editarProfesor, name="EditarProfesor"),
 ]
